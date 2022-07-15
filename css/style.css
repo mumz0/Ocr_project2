@@ -52,8 +52,10 @@ nav li{
 } 
 
 /*title*/
-.wrapper{
-  padding: 0 2rem 0 2rem;
+
+
+.title-form-filters-container{
+  padding: 0 3rem 0 3rem;
 }
 
 .wrapper h1{
@@ -68,8 +70,8 @@ nav li{
 
 /* search form */
 
-.search-form{
-  display: flex;
+.search-form{ 
+  display: flex;    
 }
 
 .search-form i{
@@ -79,7 +81,9 @@ nav li{
 }
 
 .search-form input{
+  display: flex;
   border: 1px solid #F2F2F2;
+  padding-left: 1rem;
 }
 
 .search-form button{
@@ -91,6 +95,7 @@ nav li{
   font-weight: bold;
   padding: 0 1rem;
   cursor: pointer;
+  
 }
 
 .search-form button:hover{
@@ -111,15 +116,15 @@ nav li{
 
 .filters-section{
   display: flex;
-  align-items: center;
-  font-size: 0.9rem;
   padding-top: 1rem;
+  font-size: 0.9rem;
   flex-wrap: wrap;
 }
 
 .filters-section h2{
-  font-size: 1.2rem;
-  
+  font-size: 1rem;
+  padding-top: 1rem;
+  align-items: center;
 }
 
 .filters-list{
@@ -151,33 +156,28 @@ nav li{
 .filters-list span{
   font-weight: bold;
   padding-left: 0.9rem;
-  margin-right: 1rem;
-     
+  margin-right: 1rem;    
 }
+
+
+/*info*/
 
 .bubble-info{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.5rem;
   padding-top:1rem;
-   
 }
-
-
 
 .bubble-info .fa-solid{  
-color: white;
-background-color: #0065FC;  
-border-radius: 50%;
+color:#0065FC;
 border: 1px solid #F2F2F2;
-display: flex;
-align-items: center;
-justify-content: center;  
+border-radius: 50%;
+padding: 0.2rem 0.4rem ;
+font-size: 70%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-
-}
+@media screen and (min-width: 768px) and (max-width: 992px){}
 
 
 @media screen and (max-width: 768px){
@@ -187,18 +187,21 @@ justify-content: center;
 nav {
   margin: auto;
 }
+
 nav ul{
  flex-basis: 100%;  
 }
 
 nav img{
-  margin:auto;           
+  margin:auto; 
+  padding-top: 2rem;
+  padding-bottom: 1rem;          
 }
 
 .nav-links{  
   flex-basis: 100%;
   text-align: center;
-  padding: 1rem;     
+  padding: 1rem
 }
 
 .nav-links:hover{
@@ -207,24 +210,53 @@ nav img{
   flex-basis: 100%;
 }
 
+
+/*title*/
+
+.title-form-filters-container{
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+
 /*search form*/
+
+.search-form{
+  padding-top: 1rem;
+}
 
 .search-text{
   display: none;
 }
+
 .fa-solid.fa-magnifying-glass{
   display: block;
   background-color: inherit;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0;  
 }
 
+.search-form input{
+  flex-grow: 1; 
+  width:50%;
+  margin-right: -2rem;
+} 
+
+.search-form button{
+  border-radius: 1rem 1rem 1rem 1rem; 
+}
+
+
 /*filter section*/
+
+.filters-section{
+  padding-top: 0;
+}
+
+.filters-section ul{
+  padding-left: 0%;
+  margin-top: 0;
+}
 
 .animal-filter{
   width: 142px
 }
-
 }
-
-
-
