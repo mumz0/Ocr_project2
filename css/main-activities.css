@@ -1,0 +1,155 @@
+/* Marseille activities */
+
+.marseille-activities h1 {
+    margin: 2rem 0 1rem 3rem;
+}
+
+.activities-box {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    gap: 2rem;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem 0 3rem;
+    gap: 2rem;
+}
+
+.activities article {
+    border-radius: 1rem;
+    box-shadow: 0 0 10px lightgrey;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.activities article:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.col2 {
+    flex-basis: 50%;
+}
+
+.col4 {
+    flex-basis: 50%;
+}
+
+.activities h4 {
+    font-size: 0.7rem;
+    margin: 1rem;
+}
+
+.large {
+    display: flex;
+    flex-grow: 1;
+    height: 24.1rem;
+    width: 50%;
+}
+
+.large img {
+    width: 100%;
+    object-fit: cover;
+    height: 21.1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.col2 .medium {
+    margin-bottom: 2rem;
+}
+
+.col4 .small {
+    margin-bottom: 2rem;
+}
+
+.medium {
+    height: 12rem;
+}
+
+.medium img {
+    width: 100%;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.small {
+    height: 10rem;
+}
+
+.small img {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    /* Marseille Activities */
+
+    .activities-cards {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .medium {
+        height: 11rem;
+    }
+
+    .medium img {
+        width: 100%;
+        height: 8rem;
+
+    }
+
+    .small {
+        height: 11rem;
+    }
+
+    .small img {
+
+        width: 100%;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Marseille activities */
+
+    .marseille-activities h1 {
+        margin: 3rem 0 1rem 2rem;
+    }
+
+    .activities-cards {
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    .activities-box {
+        flex-direction: column;
+    }
+
+    .activities article img {
+        height: 27vw;
+    }
+
+    .activities article {
+        height: 38vw;
+    }
+
+    .activities-cards h4 {
+        font-size: 3.5vw;
+        margin: 3vw;
+    }
+
+    .large {
+        width: 100%
+    }
+}
