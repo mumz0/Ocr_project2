@@ -331,7 +331,11 @@
   }
 
   .listed-by-popularity i {
-    font-size: 20px;
+    font-size: 10px;
+  }
+
+  .star-popular-title i{
+    font-size: 15px;
   }
 
   .popular-cards img {
