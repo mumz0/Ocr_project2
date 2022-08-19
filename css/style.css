@@ -100,6 +100,7 @@ nav li{
 
 .search-form button:hover{
   transform: scale(1.01);
+  background-color: blue;
 }
 
 .fa-solid.fa-magnifying-glass{
@@ -141,6 +142,12 @@ nav li{
   align-items: center;    
 }
 
+.filters-button:hover{
+  background-color:#F2F2F2;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 .filters-list .fa-solid{
   background-color: #DEEBFF;
   color: #0065FC;
@@ -177,7 +184,402 @@ padding: 0.2rem 0.4rem ;
 font-size: 70%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){}
+
+/* MAIN */
+
+/* Hebergement list by city */
+
+.appartments-lst{
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 3rem;
+}
+
+.appartments-lst > div{
+  background-color: #F2F2F2;
+  border-radius: 1rem;
+}
+
+.listed-by-city a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.show-more p{
+  font-size: 1rem;
+}
+
+
+.listed-by-city{
+  flex-basis: 66%;
+  padding: 2rem 2rem 0 2rem;
+  display:flex;
+  flex-direction: column;
+}
+
+.listed-by-city h1{
+  margin: 1rem 0 0 0;
+}
+
+
+
+
+/* City cards */
+
+.city-appartments{
+  display:flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.city-cards{
+  border-radius: 1rem;
+  background-color: white;
+  flex-grow: 1;
+  padding: 0.3rem 0.3rem 0 0.3rem;
+  flex-basis: 25%;
+  box-shadow: 0 0 10px lightgrey;
+    
+}
+
+.city-cards:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.city-cards img{
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+ 
+  width:100%;
+  height: 7vw;
+  flex-grow:1; 
+}
+
+.city-cards h3{
+  font-size: 1.1vw;
+  margin: 0;
+  padding: 0.2rem 0 0 0.5rem;
+  flex-grow: 1;
+}
+.city-cards p{
+  font-size: 1.1vw;
+  margin: 0;
+  padding: 0.2rem 0 0.2rem 0.5rem;
+}
+.city-cards ul{
+  margin: 0;
+  padding: 0.2rem 0 0.5rem 0.5rem;
+}
+
+.city-cards li{
+  list-style: none;
+  font-size: 0.8vw;
+}
+.blue{
+  color:#0065FC;
+}
+
+.gray{
+  color:lightgray;
+}
+
+
+/* Hébergement list by popularity */
+
+.popular-appartments{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+  gap: 1.5rem;
+}
+
+.listed-by-popularity{
+  flex-basis: 33%;
+  padding: 2rem 2rem 2rem 2rem; 
+  
+}
+
+.listed-by-popularity div{
+  display: flex; 
+  align-items: center; 
+}
+
+.listed-by-popularity i{
+  margin-left: auto; 
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/* Popular cards */
+
+.popular-cards{
+  display: flex;
+  flex-grow:1;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+  box-shadow: 0 0 10px lightgrey;
+  flex-direction: row;
+  height: 9vw; 
+}
+
+.popular-cards:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.listed-by-popularity div{
+  align-items: baseline;
+}
+
+.popular-cards img{
+  border-radius: 1rem 0 0 1rem;
+  width: 10vw;
+  object-fit: cover;
+}
+
+.popular-cards h3{
+  padding: 0.5rem 0 0 1rem;
+  font-size: 1vw;
+  margin: 0;
+}
+.popular-cards p{
+  padding: 0.5rem 0 1.2rem 1rem;
+  font-size: 1vw;
+  margin: 0;
+}
+
+.popular-cards ul{
+  padding-left: 1rem;
+  margin: 0; 
+}
+
+.popular-cards li{
+  list-style: none;
+  font-size: 0.7vw;
+}
+
+.popular-cards div{
+  flex-direction: column;
+  
+}
+
+
+/* Marseille activities */
+
+
+.marseille-activities h1{
+  margin:2rem 0 1rem 3rem;
+  
+}
+.activities-box{
+  display : flex;
+  flex-direction: row;
+  flex-basis:100%;
+  gap:2rem;
+}
+
+.activities-cards{
+  display: flex;
+  flex-direction: row;
+  margin:0 3rem 0 3rem;
+  gap:2rem;
+}
+
+.activities article{
+  border-radius: 1rem;
+  box-shadow: 0 0 10px lightgrey;
+  flex-grow: 1;
+  flex-direction: column; 
+}
+
+.activities article:hover{
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.col2{
+  flex-basis: 50%;
+}
+
+.col4{
+  flex-basis: 50%;
+}
+
+.activities h4{
+  font-size: 0.7rem; 
+  margin: 1rem;
+  
+}
+
+.large{
+  display: flex;
+  flex-grow:1;
+  height: 24.1rem;
+  width: 50%;  
+}
+
+.large img{
+  width: 100%;
+  object-fit: cover;
+  height: 21.1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.col2 .medium{
+  margin-bottom: 2rem;
+}
+
+.col4 .small{
+  margin-bottom: 2rem;
+}
+
+.medium{
+  height: 12rem;
+}
+
+.medium img{
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;   
+}
+
+.small{
+  height: 10rem;
+}
+
+.small img{
+  
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+
+/* Footer */
+
+.footer-section{
+  background-color:#F2F2F2;
+  display:flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+
+
+.a-propos{
+  flex-basis:33%;
+  margin: 2.5rem 0 2.5rem 2rem;
+}
+
+.nos-hebergements{
+  flex-basis:33%;
+  margin: 2.5rem 0 2.5rem 2rem;
+}
+
+.assistance{
+  flex-basis:33%;
+  margin: 2.5rem 0 2.5rem 2rem;
+}
+.footer-section h1{
+  font-size: 1rem;
+
+}
+
+.footer-section p{
+  font-size: 0.8rem;
+  margin: 0.15rem 0 0.5rem 0;
+
+}
+  
+  
+
+
+
+@media screen and (max-width: 992px){
+
+/* MAIN */
+
+.appartments-lst{
+  flex-direction: column;
+  padding: 1rem 1rem;  
+}
+
+.listed-by-popularity{
+  order: -1;
+}
+
+.city-appartments{
+  flex-direction: row;
+}
+
+.city-cards img{
+  height:10vw;
+}
+
+.popular-appartments{
+  flex-direction: row;
+  width: 100%;
+}
+
+.popular-cards{
+  height:14vw;
+  width: 33%;
+}
+
+.popular-cards img{
+  border-radius: 1rem 0 0 1rem;
+  width: 12vw;
+  object-fit: cover; 
+}
+.popular-cards h3{
+  font-size: 1.5vw;
+}
+.popular-cards p{
+ 
+  font-size: 1.5vw;
+}
+
+
+/* Marseille Activities */
+
+.activities-cards{
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.medium{
+  height: 11rem;
+}
+
+.medium img{
+  width: 100%;
+  height: 8rem;
+     
+}
+
+.small{
+  height: 11rem;
+}
+
+.small img{
+  
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+}
 
 
 @media screen and (max-width: 768px){
@@ -258,5 +660,155 @@ nav img{
 
 .animal-filter{
   width: 142px
+}
+
+
+/* MAIN */
+
+/* appartments list */
+
+.appartments-lst > div{
+  border-radius: 0;
+}
+
+.appartments-lst{
+  flex-direction: column;
+  padding: 1rem 0 0 0;
+  
+}
+
+.appartments-lst .listed-by-city{
+  background-color: white;
+  padding: 0 2rem 0 2rem;
+}
+
+/* By city */
+
+.city-appartments{
+  flex-direction: column;
+}
+
+.city-cards img{
+  height: 27vw;
+}
+
+.city-cards h3{
+  padding: 1rem 0 0 1rem;
+  font-size: 4vw;
+}
+.city-cards p{
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-size: 3vw;
+}
+.city-cards ul{
+  padding: 0.5rem 0 1rem 1rem;
+}
+
+.city-cards li{
+  font-size: 2.5vw;
+}
+
+.show-more p{
+  margin:0;
+
+}
+
+
+/* By popularity */
+
+.listed-by-popularity{
+  order: -1;
+  background-color: #F2F2F2;
+}
+
+.listed-by-popularity div{
+  align-items: baseline;
+}
+
+.popular-appartments{
+  flex-direction: Column;
+}
+
+.popular-cards{
+  height:30vw;
+  width: 100%;
+  
+}
+
+.popular-cards img{
+  height: auto;
+  width: 35vw;
+}
+
+.popular-cards h3{
+  font-size: 4vw;
+  padding-left: 2rem
+}
+
+.popular-cards p{
+  padding: 0.5rem 0 0 2rem;
+  font-size: 3.5vw;
+}
+
+.popular-cards li{
+  font-size: 2.5vw;
+  padding: 0 0 0.5rem 1rem;
+}
+
+/* Marseille activities */
+
+.marseille-activities h1{
+  margin: 3rem 0 1rem 2rem;
+}
+.activities-cards{
+  margin: 1rem 2rem 0 2rem;
+}
+
+.activities-box{
+  flex-direction: column;
+}
+
+.activities article img{
+  height: 27vw;
+}
+
+.activities article{
+  height: 38vw;
+}
+
+.activities-cards h4{
+  font-size: 3.5vw;
+  margin: 3vw;
+}
+
+.large{
+  width:100%
+}
+
+/* Footer */
+
+.footer-section{
+  flex-direction: column;
+}
+
+.footer-section h1{
+  font-size:4vw;
+}
+
+.footer-section p{
+  font-size:3vw;
+
+}
+
+.a-propos{
+  margin:2rem 0 0 2rem;
+}
+
+.nos-hebergements{
+  margin:1rem 0 0 2rem;
+}
+
+.assistance{
+  margin: 1rem 0 2rem 2rem;
 }
 }
