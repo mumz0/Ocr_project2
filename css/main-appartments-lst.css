@@ -29,8 +29,9 @@
   flex-direction: column;
 }
 
-.listed-by-city h1 {
-  margin: 1rem 0 0 0;
+.listed-by-city h2 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
 }
 
 
@@ -110,6 +111,11 @@
   padding: 2rem 2rem 2rem 2rem;
 }
 
+.listed-by-popularity h2{
+  font-size: 20px;
+  margin: 10px 0 12px 0;
+}
+
 .listed-by-popularity div {
   display: flex;
   align-items: center;
@@ -129,6 +135,7 @@
 
 .popular-cards {
   display: flex;
+  width: -webkit-fill-available;
   flex-grow: 1;
   border-radius: 1rem;
   background-color: white;
@@ -136,6 +143,7 @@
   box-shadow: 0 0 10px lightgrey;
   flex-direction: row;
   height: 9vw;
+  
 }
 
 .popular-cards:hover {
@@ -155,24 +163,24 @@
 
 .popular-cards h3 {
   padding: 0.5rem 0 0 1rem;
-  font-size: 1vw;
+  font-size: 1.1vw;
   margin: 0;
 }
 
 .popular-cards p {
-  padding: 0.5rem 0 1.2rem 1rem;
-  font-size: 1vw;
+  padding: 0.5rem 0 0 1rem;
+  font-size: 1.1vw;
   margin: 0;
 }
 
 .popular-cards ul {
-  padding-left: 1rem;
+  padding: 0 0 5px 10px;
   margin: 0;
 }
 
 .popular-cards li {
   list-style: none;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
 }
 
 .popular-cards div {
@@ -189,7 +197,7 @@
     padding: 1rem 1rem;
   }
 
-  
+
   /* By city */
 
   .city-appartments {
@@ -205,6 +213,7 @@
 
   .listed-by-popularity {
     order: -1;
+
   }
 
   .popular-appartments {
@@ -224,11 +233,13 @@
   }
 
   .popular-cards h3 {
-    font-size: 1.5vw;
+    font-size: 12px;
+    padding: 10px 10px 0 6px;  
   }
 
   .popular-cards p {
-    font-size: 1.5vw;
+    font-size: 12px;
+    padding-left: 10px;
   }
 }
 
@@ -253,6 +264,11 @@
     padding: 0 2rem 0 2rem;
   }
 
+  .listed-by-city h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
 
   /* By city */
 
@@ -265,17 +281,17 @@
   }
 
   .city-cards h3 {
-    padding: 1rem 0 0 1rem;
+    padding: 8px 0 0 15px;
     font-size: 4vw;
   }
 
   .city-cards p {
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 8px 0 0 15px;
     font-size: 3vw;
   }
 
   .city-cards ul {
-    padding: 0.5rem 0 1rem 1rem;
+    padding: 8px 0 10px 15px;
   }
 
   .city-cards li {
@@ -283,11 +299,18 @@
   }
 
   .show-more p {
-    margin: 0;
+    margin:0;
+    padding: 0 0 20px 0;
+    font-size: 15px
   }
 
 
   /* By popularity */
+
+  .listed-by-popularity h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 
   .listed-by-popularity {
     order: -1;
@@ -305,7 +328,10 @@
   .popular-cards {
     height: 30vw;
     width: 100%;
+  }
 
+  .listed-by-popularity i {
+    font-size: 20px;
   }
 
   .popular-cards img {
@@ -315,16 +341,15 @@
 
   .popular-cards h3 {
     font-size: 4vw;
-    padding-left: 2rem
+    padding-left: 15px
   }
 
   .popular-cards p {
-    padding: 0.5rem 0 0 2rem;
+    padding: 10px 0 0 15px;
     font-size: 3.5vw;
   }
 
-  .popular-cards li {
-    font-size: 2.5vw;
-    padding: 0 0 0.5rem 1rem;
+  .popular-cards ul {
+    padding: 0 0 10px 15px;
   }
 }

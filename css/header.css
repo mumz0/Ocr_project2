@@ -1,5 +1,9 @@
 /*HEADER*/
 
+header{
+  padding: 0 0 20px 50px;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -39,11 +43,7 @@ nav{
   
 
   /*title*/
-  
-  .title-form-filters-container{
-    padding: 0 3rem 0 3rem;
-  }
-  
+ 
   .wrapper h1{
     font-size: 21px;
     font-weight: bold;
@@ -171,8 +171,19 @@ nav{
 
 
   @media screen and (max-width: 768px){
+   
+    header{
+      padding: 0 30px 20px 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
   
     /*HEADER*/
+    
+    header{
+      padding: 0 30px 20px 30px;
+    }
 
 nav {
     margin: auto;
