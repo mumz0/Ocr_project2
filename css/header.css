@@ -9,31 +9,30 @@ nav{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin-bottom: -1rem;
   }
   
   nav img{
     margin-right: auto;
-    padding: 0 3rem;
-    width: 6rem;
+    width: 7%;
   }
   
   nav ul{ 
-    padding: 0rem;
+    padding: 0;
     list-style: none;
-    margin: 0 0 0 0;     
+    margin: 0;     
   }
   
   nav li{  
     display:flex;
-    margin: auto;         
+    margin: 0;         
   }
   
   .nav-links{
     border: 2px solid transparent;  
-    padding: 3rem;
+    padding: 4vw;
     text-decoration: none;
-    color: black;      
+    color: black; 
+    font-size: 1.2vw;     
   }
   
   .nav-links:hover{    
@@ -45,41 +44,44 @@ nav{
   /*title*/
  
   .wrapper h1{
-    font-size: 21px;
+    font-size: 1.5vw;
     font-weight: bold;
+    margin: 0.7vw 0 0.5vw 0;
   }
   
   .wrapper p{
-    margin-top: -0.5rem;
+    margin: 0 0 2vw 0;
+    font-size:1.1vw;
   }
   
   
   /* search form */
   
   .search-form{ 
-    display: flex;    
+    display: flex;
+    margin-bottom: 1vw;    
   }
   
   .search-form i{
-    padding: 1rem 1.2rem;
+    padding: 1vw 1.2vw;
     background-color: #F2F2F2;
-    border-radius: 1rem 0 0 1rem;     
+    border-radius: 10px 0 0 10px;     
   }
   
   .search-form input{
     display: flex;
     border: 1px solid #F2F2F2;
-    padding-left: 1rem;
+    padding-left: 1vw;
   }
   
   .search-form button{
     background-color: #0065FC;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 1vw 1vw 0;
     border: 1px solid #0065FC;
-    padding-right: 1.8rem;
+    padding-right: 1.8vw;
     color: #F2F2F2;
     font-weight: bold;
-    padding: 0 1rem;
+    padding: 0 1vw 0 1vw;
     cursor: pointer;
   }
   
@@ -90,6 +92,11 @@ nav{
   
   .fa-solid.fa-magnifying-glass{
     display: none;
+    
+  }
+
+  .fa-solid .fa-location-dot{
+    font-size: 1vw;
   }
   
   .search-form input::placeholder{
@@ -97,19 +104,26 @@ nav{
     color: black;
   }
   
+  .search-text{
+    font-size: 1.2vw;
+  }
+
+  .search-form input{
+    font-size: 1.2vw;
+  }
   
   /* filters */
   
   .filters-section{
     display: flex;
-    padding-top: 1rem;
-    font-size: 0.9rem;
+    padding-top: 1vw;
+    font-size: 1vw;
     flex-wrap: wrap;
   }
   
   .filters-section h2{
-    font-size: 1rem;
-    padding-top: 1rem;
+    font-size: 1.2vw;
+    padding-top: 1vw;
     align-items: center;
   }
   
@@ -117,12 +131,12 @@ nav{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; 
+    gap: 2vw; 
   }
   
   .filters-button{
     border: 2px solid #F2F2F2;
-    border-radius: 2rem;
+    border-radius: 3vw 3.5vw 3.5vw 3vw;
     display: flex;
     align-items: center;    
   }
@@ -138,8 +152,8 @@ nav{
     color: #0065FC;
     border-radius: 50%;
     margin: -2px;
-    width: 3rem;
-    height: 3rem;
+    width: 4vw;
+    height: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -147,8 +161,8 @@ nav{
   
   .filters-list span{
     font-weight: bold;
-    padding-left: 0.9rem;
-    margin-right: 1rem;    
+    padding-left: 1vw;
+    margin-right: 1vw;    
   }
   
   
@@ -157,23 +171,27 @@ nav{
   .bubble-info{
     display: flex;
     align-items: baseline;
-    gap: 0.5rem;
-    padding-top:1rem;
+    gap: 0.5vw;
+    padding-top:1vw;
+  }
+
+  .bubble-info span{
+    font-size: 1.1vw;
   }
   
   .bubble-info .fa-solid{  
   color:#0065FC;
   border: 1px solid #F2F2F2;
   border-radius: 50%;
-  padding: 0.2rem 0.4rem ;
+  padding: 0.2vw 0.4vw ;
   font-size: 70%;
   }
 
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 992px){
    
     header{
-      padding: 0 30px 20px 30px;
+      padding: 0 3vw 2vw 3vw; 
     }
   }
 
@@ -182,10 +200,11 @@ nav{
     /*HEADER*/
     
     header{
-      padding: 0 30px 20px 30px;
+      padding: 0 3vw 2vw 3vw;
+      
     }
 
-nav {
+    nav {
     margin: auto;
   }
   
@@ -194,15 +213,17 @@ nav {
   }
   
   nav img{
+    font-size: 5vw;
     margin:auto; 
-    padding-top: 2rem;
-    padding-bottom: 1rem;          
+    padding-top: 5vw;
+    padding-bottom: 1vw; 
+    width: 25%;         
   }
   
   .nav-links{  
     flex-basis: 100%;
     text-align: center;
-    padding: 1rem
+    padding: 5vw;
   }
   
   .nav-links:hover{
@@ -210,54 +231,108 @@ nav {
     border-bottom: 2px solid #0065FC;
     flex-basis: 100%;
   }
+
+  .nav-links{
+    font-size:16px;
+  }
   
   
   /*title*/
   
   .title-form-filters-container{
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 3vw;
+  }
+
+  .wrapper h1{
+    font-size: 21px;
+  }
+  .wrapper p{
+    font-size: 16px;
+    margin-top: 10px;
   }
   
   
   /*search form*/
   
   .search-form{
-    padding-top: 1rem;
+    padding: 15px;
   }
   
   .search-text{
     display: none;
+    
   }
   
   .fa-solid.fa-magnifying-glass{
     display: block;
     background-color: inherit;
-    padding: 0;  
+    border-radius: inherit;
+    padding: 20px 15px 20px 15px;
   }
-  
+
+  .search-form i{
+    padding: 20px 25px 20px 25px;
+  }
+
   .search-form input{
-    flex-grow: 1; 
-    width:50%;
-    margin-right: -2rem;
-  } 
-  
+    padding-left: 25px;
+    flex-grow: 1;
+    font-size: 20px 
+    
+  }
+ 
   .search-form button{
-    border-radius: 1rem 1rem 1rem 1rem; 
+    border-radius: 20px; 
+    
   }
   
   
   /*filter section*/
   
   .filters-section{
-    padding-top: 0;
+    padding-top: 20px;
+    align-items: center;
   }
   
   .filters-section ul{
-    padding-left: 0%;
     margin-top: 0;
+    
   }
   
-  .animal-filter{
-    width: 142px
-  }   
+  .filters-section h2{
+    font-size: 16px;
+    padding: 15px;
+    
+  }
+
+  .filters-list{
+    font-size: 16px;
+    gap: 20px;
+  }
+
+  .filters-button{
+    border-radius: 50px;
+    height: 50px;
+  }
+
+  .filters-button span{
+    padding: 10px;
+  }
+
+  .filters-list .fa-solid {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bubble-info .fa-solid{
+    font-size: 100%;
+    height:100%;
+    width:5%;
+  }
+
+  .bubble-info span{
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  
   }
