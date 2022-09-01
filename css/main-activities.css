@@ -1,5 +1,8 @@
 /* Marseille activities */
 
+.marseille-activities{
+    height: 400px;
+}
 .marseille-activities h2{
    
     margin: 30px 0 20px 50px;
@@ -10,20 +13,19 @@
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
-    gap: 2rem;
+    gap: 5%;
 }
 
 .activities-cards {
     display: flex;
     flex-direction: row;
-    margin: 0 3rem 0 3rem;
-    gap: 2rem;
+    margin: 2% 2%;
+    gap: 2.5%;
 }
 
 .activities article {
     border-radius: 1rem;
     box-shadow: 0 0 10px lightgrey;
-    flex-grow: 1;
     flex-direction: column;
 }
 
@@ -41,86 +43,98 @@
 }
 
 .activities h4 {
-    font-size: 0.7rem;
-    margin: 1rem;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    margin: 5%;
 }
 
 .large {
     display: flex;
-    flex-grow: 1;
-    height: 24.1rem;
+    height: 100%;
     width: 50%;
 }
 
 .large img {
     width: 100%;
     object-fit: cover;
-    height: 21.1rem;
-    border-radius: 1rem 1rem 0 0;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
 }
 
 .col2 .medium {
-    margin-bottom: 2rem;
+    margin-bottom: 13%;
 }
 
 .col4 .small {
-    margin-bottom: 2rem;
+    margin-bottom: 13%;
 }
 
 .medium {
-    height: 12rem;
+    height: 50%;
 }
 
 .medium img {
     width: 100%;
-    height: 9rem;
+    height: 150px;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .small {
-    height: 10rem;
+    height: 40%;
 }
 
 .small img {
     width: 100%;
-    height: 7rem;
+    height: 105px;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 
 @media screen and (max-width: 992px) {
     /* Marseille Activities */
 
+    .marseille-activities{
+        height: auto;
+    }
     .marseille-activities h2 {
-        margin: 40px 0 30px 48px;
+        margin: 40px 0 30px 20px;
     }
     .activities-cards {
         flex-direction: column;
-        margin: 1rem;
+        margin: 30px;
+        gap: 40px
     }
 
+    .large{
+        height:auto;
+    }
     .medium {
-        height: 11rem;
+        height: 190px;
     }
 
     .medium img {
         width: 100%;
-        height: 8rem;
+        height: 135px;
+    }
 
+    .medium h4{
+        margin: 4%;
     }
 
     .small {
-        height: 11rem;
+        height: 180px;
     }
 
     .small img {
-
         width: 100%;
-        height: 8rem;
+        height: 120px;
         object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
+        border-radius: 15px 15px 0 0;
+    }
+    .small h4{
+        margin: 4%;
     }
 }
 
@@ -129,34 +143,59 @@
 
     /* Marseille activities */
 
+    .city-appartments-box-top{
+        display:flex;
+        flex-direction:column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .city-appartments-box-bottom{
+        display:flex;
+        flex-direction:column; 
+        height: auto;
+        gap: 20px;   
+    }
+
     .marseille-activities h2 {
-        margin: 3rem 0 1rem 2rem;
+        margin: 30px 0 20px 30px;
         font-size: 20px;
-        margin-bottom: 40px;
+        
     }
 
     .activities-cards {
-        margin: 1rem 2rem 0 2rem;
+        margin: 20px 20px 0 20px;
+        gap: 20px;
     }
 
     .activities-box {
         flex-direction: column;
+        gap: 20px;
     }
 
     .activities article img {
-        height: 33vw;
+        height: 130px;
     }
 
     .activities article {
-        height: 45vw;
+        height: 170px;
     }
 
     .activities-cards h4 {
-        font-size: 3.5vw;
-        margin: 3vw;
+        font-size: 14px;
+        margin: 10px;
     }
 
     .large {
-        width: 100%
+        width: 100%;
+        
+    }
+    .col2 .medium{
+        margin: 0 0 20px 0;
+        
+    }
+
+    .col4 .small{
+        margin-bottom: 20px;
     }
 }

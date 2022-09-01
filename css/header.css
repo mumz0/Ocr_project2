@@ -9,11 +9,13 @@ nav{
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
+    height: 100px;
+    
   }
   
   nav img{
     margin-right: auto;
-    width: 7%;
+    width: 100px;
   }
   
   nav ul{ 
@@ -24,15 +26,15 @@ nav{
   
   nav li{  
     display:flex;
-    margin: 0;         
+    margin: auto;        
   }
-  
+
   .nav-links{
     border: 2px solid transparent;  
-    padding: 4vw;
+    padding: 50px;
     text-decoration: none;
-    color: black; 
-    font-size: 1.2vw;     
+    color: black;
+    font-size:16px;     
   }
   
   .nav-links:hover{    
@@ -44,44 +46,42 @@ nav{
   /*title*/
  
   .wrapper h1{
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0.7vw 0 0.5vw 0;
+    margin-top: 30px;
   }
   
   .wrapper p{
-    margin: 0 0 2vw 0;
-    font-size:1.1vw;
+    margin-top: -5px;
+    font-size: 14px;
   }
   
   
   /* search form */
   
   .search-form{ 
-    display: flex;
-    margin-bottom: 1vw;    
+    display: flex;    
   }
   
   .search-form i{
-    padding: 1vw 1.2vw;
+    padding: 15px 20px;
     background-color: #F2F2F2;
-    border-radius: 10px 0 0 10px;     
+    border-radius: 15px 0 0 15px;     
   }
   
   .search-form input{
     display: flex;
     border: 1px solid #F2F2F2;
-    padding-left: 1vw;
+    padding-left: 1rem;
   }
   
   .search-form button{
     background-color: #0065FC;
-    border-radius: 0 1vw 1vw 0;
-    border: 1px solid #0065FC;
-    padding-right: 1.8vw;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid #0065FC;
     color: #F2F2F2;
     font-weight: bold;
-    padding: 0 1vw 0 1vw;
+    padding: 0 10px;
     cursor: pointer;
   }
   
@@ -92,11 +92,6 @@ nav{
   
   .fa-solid.fa-magnifying-glass{
     display: none;
-    
-  }
-
-  .fa-solid .fa-location-dot{
-    font-size: 1vw;
   }
   
   .search-form input::placeholder{
@@ -104,26 +99,19 @@ nav{
     color: black;
   }
   
-  .search-text{
-    font-size: 1.2vw;
-  }
-
-  .search-form input{
-    font-size: 1.2vw;
-  }
   
   /* filters */
   
   .filters-section{
     display: flex;
-    padding-top: 1vw;
-    font-size: 1vw;
+    padding-top: 15px;
+    font-size: 10px;
     flex-wrap: wrap;
   }
   
   .filters-section h2{
-    font-size: 1.2vw;
-    padding-top: 1vw;
+    font-size: 16px;
+    padding-top: 10px;
     align-items: center;
   }
   
@@ -131,14 +119,18 @@ nav{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw; 
+    gap: 20px; 
   }
   
   .filters-button{
     border: 2px solid #F2F2F2;
-    border-radius: 3vw 3.5vw 3.5vw 3vw;
+    border-radius: 30px;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    
+  }
+  .filters-button span{
+    font-size: 14px;
   }
   
   .filters-button:hover{
@@ -152,8 +144,8 @@ nav{
     color: #0065FC;
     border-radius: 50%;
     margin: -2px;
-    width: 4vw;
-    height: 4vw;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -161,8 +153,8 @@ nav{
   
   .filters-list span{
     font-weight: bold;
-    padding-left: 1vw;
-    margin-right: 1vw;    
+    padding-left: 15px;
+    margin-right: 20px;    
   }
   
   
@@ -171,27 +163,27 @@ nav{
   .bubble-info{
     display: flex;
     align-items: baseline;
-    gap: 0.5vw;
-    padding-top:1vw;
-  }
-
-  .bubble-info span{
-    font-size: 1.1vw;
+    gap: 10px;
+    padding-top:15px;
   }
   
   .bubble-info .fa-solid{  
   color:#0065FC;
   border: 1px solid #F2F2F2;
   border-radius: 50%;
-  padding: 0.2vw 0.4vw ;
-  font-size: 70%;
+  padding: 5px 10px ;
+  font-size: 80%;
+  }
+
+  .bubble-info span{
+    padding-top: 10px;
   }
 
 
   @media screen and (max-width: 992px){
    
     header{
-      padding: 0 3vw 2vw 3vw; 
+      padding: 0 30px 20px 30px;
     }
   }
 
@@ -200,30 +192,28 @@ nav{
     /*HEADER*/
     
     header{
-      padding: 0 3vw 2vw 3vw;
-      
+      padding: 0 0 20px 0;
     }
 
     nav {
-    margin: auto;
-  }
+      padding-bottom: 20px;
+    }
   
   nav ul{
-   flex-basis: 100%;  
+   flex-basis: 100%;
+     
   }
   
   nav img{
-    font-size: 5vw;
     margin:auto; 
-    padding-top: 5vw;
-    padding-bottom: 1vw; 
-    width: 25%;         
+    padding-top: 20px;
+    padding-bottom: 10px;          
   }
   
   .nav-links{  
     flex-basis: 100%;
     text-align: center;
-    padding: 5vw;
+    padding: 10px;
   }
   
   .nav-links:hover{
@@ -231,108 +221,68 @@ nav{
     border-bottom: 2px solid #0065FC;
     flex-basis: 100%;
   }
-
-  .nav-links{
-    font-size:16px;
-  }
   
   
   /*title*/
   
   .title-form-filters-container{
-    padding: 3vw;
-  }
-
-  .wrapper h1{
-    font-size: 21px;
-  }
-  .wrapper p{
-    font-size: 16px;
-    margin-top: 10px;
+    padding-top: 10px; 
+    padding: 0 30px 0 30px;
   }
   
   
   /*search form*/
   
   .search-form{
-    padding: 15px;
+    padding: 10px 30px 0 30px;
   }
   
   .search-text{
     display: none;
-    
   }
   
   .fa-solid.fa-magnifying-glass{
     display: block;
     background-color: inherit;
-    border-radius: inherit;
-    padding: 20px 15px 20px 15px;
+    padding: 0;  
   }
-
-  .search-form i{
-    padding: 20px 25px 20px 25px;
-  }
-
+  
   .search-form input{
-    padding-left: 25px;
-    flex-grow: 1;
-    font-size: 20px 
-    
-  }
- 
+    flex-grow: 1; 
+    width: 50%;
+    margin-right: -30px;
+  } 
+  
   .search-form button{
-    border-radius: 20px; 
-    
+    border-radius: 15px;
+    width: 60px; 
   }
   
   
   /*filter section*/
   
   .filters-section{
-    padding-top: 20px;
-    align-items: center;
+    padding: 0 30px 0 30px;
   }
   
   .filters-section ul{
+    padding-left: 0;
     margin-top: 0;
-    
   }
   
-  .filters-section h2{
-    font-size: 16px;
-    padding: 15px;
-    
+  .animal-filter{
+    width: 110px;
   }
-
-  .filters-list{
-    font-size: 16px;
-    gap: 20px;
-  }
-
-  .filters-button{
-    border-radius: 50px;
-    height: 50px;
-  }
-
+  
   .filters-button span{
-    padding: 10px;
+    font-size: 12px;
   }
 
-  .filters-list .fa-solid {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .bubble-info .fa-solid{
-    font-size: 100%;
-    height:100%;
-    width:5%;
+  .bubble-info{
+    padding: 10px 30px 0 30px;
   }
 
   .bubble-info span{
     font-size: 14px;
-    padding-left: 10px;
   }
-  
   }

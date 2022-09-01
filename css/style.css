@@ -12,3 +12,9 @@
 * {
   font-family: 'Raleway', sans-serif;
 }
+
+.content{
+  max-width: 1440px;
+  display: block;
+  margin: 0 auto;
+}
